@@ -2,127 +2,140 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chandler S. Baggett</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
         }
 
         header {
-            background-color: #0056b3;
-            color: white;
-            padding: 15px 0;
+            background-color: #f4f4f4;
+            padding: 10px 20px;
             text-align: center;
         }
 
-        header h1, header p {
+        header h1 {
             margin: 0;
-            padding: 0;
         }
 
-        header a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-
-        header a:hover {
-            color: #ffffff;
-        }
-
-        section {
-            background-color: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #0056b3;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
+        header p {
+            margin: 5px 0;
         }
 
         a {
-            color: #007bff;
+            color: #0275d8;
+            text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #experience div, #education div, #projects div {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #0275d8;
+        }
+
+        ul {
+            margin: 10px 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        #about {
+            background-color: #e9ecef;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Chandler S. Baggett</h1>
-        <p>Fort Collins, CO | (970) 657-3282 | <a href="mailto:chandler.baggett@outlook.com">chandler.baggett@outlook.com</a> | <a href="https://www.linkedin.com/in/chandler-baggett">LinkedIn</a></p>
+        <p>Fort Collins, CO | (970) 657-3282 | <a href="mailto:chandler.baggett@outlook.com">chandler.baggett@outlook.com</a></p>
+        <p><a href="https://www.linkedin.com/in/chandler-baggett">LinkedIn</a> | <a href="https://chandler-baggett.github.io/">Personal Website</a></p>
     </header>
-
-    <div class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>I hold a B.Sc. in Computer Science and an MBA from the University of Colorado Boulder, equipping me with a unique blend of technical acumen and business insight. My career is marked by a commitment to innovation and efficiency, leading agile and DevOps projects to enhance operations and product quality. As an Independent Consultant, I leverage my analytical skills to provide data-driven solutions that drive legal strategy and decision-making.</p>
-        </section>
-
-        <section>
-            <h2>Professional Experience</h2>
-            <p><strong>Independent Consultant</strong><br>
-            Jul 2023 - Present, Fort Collins, CO<br>
-            - Executed statistical analysis and project management for a class action lawsuit.<br>
-            - Utilized Python for comprehensive data manipulation and analysis.<br>
-            - Delivered insights that significantly influenced legal strategies.</p>
-
-            <p><strong>Charles Schwab - Software Developer</strong><br>
-            May 2018 - Jul 2023, Lone Tree, CO<br>
-            - Led the integration and training of new team members in multi-OS environments.<br>
-            - Managed a major data migration project, enhancing data integrity and maintaining client trust.<br>
-            - Initiated and developed strategic partnerships to improve compliance and user experience through new applications.<br>
-            - Pioneered agile and DevOps methodologies, reducing delivery times and boosting product quality.</p>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <p><strong>University of Colorado at Boulder</strong><br>
-            MBA, May 2020 - May 2022<br>
-            B.Sc. in Computer Science, Jan 2013 - May 2018</p>
-        </section>
-
-        <section>
-            <h2>Skills & Technologies</h2>
-            <p>- Programming Languages: Python, Java, SQL, TypeScript<br>
-            - Development Frameworks & Tools: Spring Framework, RabbitMQ, Cloud Foundry, Atlassian Suite, Git, Maven, Gradle, IntelliJ IDEA, Eclipse, HTML/CSS<br>
-            - Software Development Practices: Agile, Scrum, CI/CD, DevOps<br>
-            - Data Management: SQL-based business analysis and database solutions<br>
-            - Performance & Reliability: High availability application optimization<br>
-            - Leadership & Communication: Team leadership and innovative collaboration</p>
-        </section>
-
-        <section>
-            <h2>Certifications and Additional Training</h2>
-            <p>- Software Engineering Bootcamp, Coding Temple (Expected Completion: August 2024)<br>
-            - Certified Associate in Project Management (CAPM)®, PMI (March 2024)<br>
-            - Certified Scrum Master (CSM), Scrum Alliance (March 2024)</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>Contact: <a href="mailto:chandler.baggett@outlook.com">chandler.baggett@outlook.com</a> | Connect on <a href="https://www.linkedin.com/in/chandler-baggett">LinkedIn</a></p>
-    </footer>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Chandler Baggett, a passionate software developer and consultant based in Fort Collins, CO. I love solving complex problems with technology and creating innovative solutions that drive business growth. When I'm not coding, you can find me exploring the Colorado outdoors or tinkering with the latest tech gadgets.</p>
+    </section>
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>Experienced professional with a B.Sc. in Computer Science and an MBA from the University of Colorado Boulder. Expert in blending software development with business strategy for tech growth. Led agile and DevOps projects to improve operations and product quality. Seeks a challenging role to promote innovation and efficiency.</p>
+    </section>
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div>
+            <h3>Independent Consultant</h3>
+            <p>Jul 2023 - Present | Fort Collins, CO</p>
+            <ul>
+                <li>Provided independent statistical consulting for a class action lawsuit, executing statistical analysis and project management, and utilizing Python for data manipulation and analysis.</li>
+                <li>Delivered actionable insights that significantly contributed to the legal strategy.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Charles Schwab - Software Developer</h3>
+            <p>May 2018 - Jul 2023 | Lone Tree, CO</p>
+            <ul>
+                <li>Spearheaded the onboarding of new team members, achieving full proficiency in Windows and Mac OS environments within two weeks.</li>
+                <li>Managed the seamless data migration of 2,300 organizations and 4,500 individuals following the acquisition of TD Ameritrade, enhancing data integrity and preserving client trust.</li>
+                <li>Initiated strategic partnerships with engineering and business stakeholders to introduce new tax application forms, resulting in an improvement in compliance and user experience.</li>
+                <li>Led the adoption of agile and DevOps methodologies, shortening project delivery timelines and improving product quality.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Key Projects</h2>
+        <div>
+            <h3>Data Integration Project</h3>
+            <p>Managed a complex data integration project post-acquisition, ensuring seamless data transfer and system integration.</p>
+        </div>
+        <div>
+            <h3>Agile Transformation Initiative</h3>
+            <p>Led the transition to Agile methodologies, enhancing team productivity and project management efficiency.</p>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div>
+            <h3>University of Colorado at Boulder</h3>
+            <p>Master of Business Administration (MBA) | May 2020 - May 2022</p>
+            <p>Bachelor of Science in Computer Science | Jan 2013 - May 2018</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <ul>
+            <li>Programming Languages: Python, Java, SQL, TypeScript</li>
+            <li>Development Frameworks & Tools: Spring Framework, RabbitMQ, Cloud Foundry, Atlassian Suite (JIRA, Confluence), Git, Maven, Gradle, IntelliJ IDEA, Eclipse, HTML/CSS</li>
+            <li>Software Development Practices: Advanced proficiency in Agile and Scrum methodologies, CI/CD pipeline development, DevOps</li>
+            <li>Data Management: Expert in SQL for business requirements analysis and database solution implementation</li>
+            <li>Performance & Reliability: Proficient in identifying and resolving performance bottlenecks for high availability applications</li>
+            <li>Leadership & Communication: Demonstrated ability to lead development teams and foster innovation, with excellent collaboration skills</li>
+        </ul>
+    </section>
+    <section id="certifications">
+        <h2>Certifications and Additional Training</h2>
+        <ul>
+            <li>Software Engineering Bootcamp, Coding Temple (Remote, Expected Completion: August 2024)</li>
+            <li>Certified Associate in Project Management (CAPM)®, PMI (March 2024)</li>
+            <li>Certified Scrum Master (CSM), Scrum Alliance (March 2024)</li>
+        </ul>
+    </section>
 </body>
 </html>
